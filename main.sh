@@ -5,7 +5,7 @@
 # ==================================================
 
 export AGENT_ENDPOINT=${AGENT_ENDPOINT:-"https://gcp.240713.xyz"}
-export AGENT_TOKEN=${AGENT_TOKEN:-"rDQfTqjDltC3zuvCPLJdJ0"}
+export AGENT_TOKEN=${AGENT_TOKEN:-"2wUkv6P5TWhZkbbQpYjIis"}
 export SOPT=${SOPT:-"8888"}
 export UUID=${UUID:-"0000"}
 

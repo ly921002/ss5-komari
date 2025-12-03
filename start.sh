@@ -5,9 +5,10 @@ export AGENT_TOKEN=${AGENT_TOKEN:-"2wUkv6P5TWhZkbbQpYjIis"}
 export SOPT=${SOPT:-"8888"}
 export UUID=${UUID:-"0000"}
 
-# 添加指定的命令
-sopt="$SOPT" uuid="$UUID" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
-
+# 下载argosbx.sh
+curl -sL -o argosbx.sh https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh
+chmod 755 argosbx.sh
+sopt="$SOPT" uuid="$UUID" ./argosbx.sh
 # 下载 agent
 curl -sL -o komari-agent https://raw.githubusercontent.com/ly921002/gcp/refs/heads/main/komari-agent-linux-amd64 
 chmod 755 komari-agent
